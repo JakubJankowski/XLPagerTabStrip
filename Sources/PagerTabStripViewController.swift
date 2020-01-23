@@ -114,7 +114,7 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         isViewAppearing = true
-        children.forEach { $0.beginAppearanceTransition(true, animated: animated) }
+//        children.forEach { $0.beginAppearanceTransition(true, animated: animated) }
     }
 
     override open func viewDidAppear(_ animated: Bool) {
@@ -126,7 +126,7 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
             moveToViewController(at: preCurrentIndex)
         }
         isViewAppearing = false
-        children.forEach { $0.endAppearanceTransition() }
+//        children.forEach { $0.endAppearanceTransition() }
     }
 
     open override func viewWillDisappear(_ animated: Bool) {
